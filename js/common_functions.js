@@ -64,9 +64,9 @@
 	var form = $("form#wrapped");
 	form.on('submit', function () {
 		form.validate();
-		if (form.valid()) {
-			$("#loader_form").fadeIn();
-		}
+		// if (form.valid()) {
+		// 	$("#loader_form").fadeIn();
+		// }
 	});
 
 	// Modal Help
