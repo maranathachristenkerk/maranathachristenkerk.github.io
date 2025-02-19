@@ -48,22 +48,23 @@
         <div class="container-fluid">
           <div class="row d-flex align-items-center">
             <div class="col-4">
-              <a data-bs-toggle="offcanvas" href="#offcanvasNav" role="button" class="btn_nav"><i class="bi bi-list"></i></a>
+              <!-- <a data-bs-toggle="offcanvas" href="#offcanvasNav" role="button" class="btn_nav"><i class="bi bi-list"></i></a> -->
             </div>
             <div class="col-4 text-center">
-              <a href="index.html"><img src="img/logo.svg" alt="" class="img-fluid" width="95" height="30" /></a>
+              <h1 class="text-md font-semibold uppercase text-red-700">Maranatha Christen Kerk</h1>
+              <!-- <a href="index.html"><img src="img/logo.svg" alt="" class="img-fluid" width="95" height="30" /></a> -->
             </div>
             <div class="col-4">
               <div id="social">
                 <ul>
-                  <li>
+                  <!-- <li>
                     <a href="#0"><i class="bi bi-facebook"></i></a>
                   </li>
                   <li>
                     <a href="#0"><i class="bi bi-twitter-x"></i></a>
-                  </li>
+                  </li> -->
                   <li>
-                    <a href="#0"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.instagram.com/maranatha.nl/"><i class="bi bi-instagram"></i></a>
                   </li>
                 </ul>
               </div>
@@ -111,8 +112,9 @@
             <div id="middle-wizard">
               <div class="space-y-4 mb-10">
                 <img src="img/banner.svg" alt="" class="img-fluid" width="100%" height="30" />
-                <h3 class="text-3xl text-center font-semibold">Ficha de Inscrição para o Seminário Internacional - Abril/2025</h3>
-                <p class="flex items-center justify-center gap-2"><i class="bi bi-calendar-date"></i> 30 de Março de 2024 - 10h00 <em>(March 30, 2024 - 10:00 AM)</em></p>
+                <h3 class="text-3xl text-center font-semibold">Ficha de Inscrição para o Seminário Internacional</h3>
+                <h3 class="text-3xl text-center font-semibold">Abril/2025</h3>
+                <p class="flex items-center justify-center gap-2 pt-6"><i class="bi bi-calendar-date"></i> 30 de Março de 2024 - 10h00 <em>(March 30, 2024 - 10:00 AM)</em></p>
                 <p class="mt-1 flex items-center justify-center gap-2"><i class="bi bi-geo-alt"></i> Thomas Schwenckestraat 30, 2563 BZ Den Haag, Netherlands</p>
               </div>
 
@@ -124,13 +126,23 @@
                 <div class="row justify-content-center">
                   <div class="col-md-10">
                     <div class="mb-3 form-floating">
-                      <input type="email" name="email" id="email" class="form-control required" placeholder="Your Email" />
-                      <label for="email">Seu Email</label>
+                      <input type="text" name="name" id="name" class="form-control required" placeholder="Nome Completo" />
+                      <label for="name">Nome Completo</label>
                     </div>
-                    <!-- <div class="mb-3 form-floating">
-                      <input type="text" name="useraddress" id="useraddress" class="form-control required" placeholder="Your Address" />
-                      <label for="useraddress">User Address</label>
-                    </div> -->
+
+                    <div class="mb-3 form-floating">
+                      <input type="email" name="email" id="email" class="form-control required" placeholder="Email" />
+                      <label for="email">Email</label>
+                    </div>
+
+                    <div class="mb-3 form-floating">
+                      <input type="tel" name="tel" id="tel" class="form-control required" placeholder="Nº Telefone" />
+                      <label for="tel">Nº Telefone</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                      <input type="text" name="country" id="country" class="form-control required" placeholder="País de Residência" />
+                      <label for="country">País de Residência</label>
+                    </div>
                   </div>
                 </div>
                 <!-- /row -->
@@ -139,26 +151,33 @@
 
               <div class="step">
                 <div class="question_title">
-                  <h3>Please fill with your details</h3>
-                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                  <!-- <h3>Demais Participantes</h3> -->
+                  <p>
+                    Informe os dados dos demais participantes que deseja inscrever. <br />
+                    Caso não haja mais participantes, clique em "Próximo".
+                  </p>
                 </div>
                 <div class="row justify-content-center">
                   <div class="col-md-7">
                     <div class="mb-3 form-floating">
-                      <input type="text" name="firstname" id="firstname" class="form-control required" placeholder="First Name" />
-                      <label for="firstname">First Name</label>
+                      <input type="text" name="participant01" id="participant01" class="form-control" placeholder="Nome do Participante 01" />
+                      <label for="participant01">Nome do Participante 01</label>
                     </div>
                     <div class="mb-3 form-floating">
-                      <input type="text" name="lastname" id="lastname" class="form-control required" placeholder="Last Name" />
-                      <label for="lastname">Last Name</label>
+                      <input type="text" name="participant02" id="participant02" class="form-control" placeholder="Nome do Participante 02" />
+                      <label for="participant02">Nome do Participante 02</label>
                     </div>
                     <div class="mb-3 form-floating">
-                      <input type="email" name="email" id="email" class="form-control required" placeholder="Your Email" />
-                      <label for="email">Your Email</label>
+                      <input type="text" name="participant03" id="participant03" class="form-control" placeholder="Nome do Participante 03" />
+                      <label for="participant03">Nome do Participante 03</label>
                     </div>
-                    <div class="form-floating">
-                      <input type="text" name="telephone" id="telephone" class="form-control required" placeholder="Your Telephone" />
-                      <label for="telephone">Your Telephone</label>
+                    <div class="mb-3 form-floating">
+                      <input type="text" name="participant04" id="participant04" class="form-control" placeholder="Nome do Participante 04" />
+                      <label for="participant04">Nome do Participante 04</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                      <input type="text" name="participant05" id="participant05" class="form-control" placeholder="Nome do Participante 05" />
+                      <label for="participant05">Nome do Participante 05</label>
                     </div>
                   </div>
                 </div>
@@ -168,22 +187,25 @@
 
               <div class="submit step">
                 <div class="question_title">
-                  <h3>Send us a message</h3>
-                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                  <!-- <h3>Send us a message</h3> -->
+                  <p>
+                    Alguma observação ou informação adicional que deseja compartilhar? <br />
+                    Caso não haja observações, clique em "Enviar".
+                  </p>
                 </div>
                 <div class="row justify-content-center">
                   <div class="col-md-10">
                     <div class="mb-4 form-floating">
-                      <textarea name="additional_message" id="additional_message" class="form-control required" placeholder="Your Message"></textarea>
-                      <label for="additional_message">Your Message</label>
+                      <textarea name="additional_message" id="additional_message" class="form-control" placeholder="Sua Mensagem"></textarea>
+                      <label for="additional_message">Sua Mensagem</label>
                     </div>
-                    <div class="terms">
+                    <!-- <div class="terms">
                       <label class="container_check"
                         >Please accept our <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">Terms and conditions</a>
                         <input type="checkbox" name="terms" value="Yes" class="required" />
                         <span class="checkmark"></span>
                       </label>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
                 <!-- /row -->
@@ -193,9 +215,9 @@
             <!-- /middle-wizard -->
 
             <div id="bottom-wizard">
-              <button type="button" name="backward" class="backward btn_1">Backward</button>
-              <button type="button" name="forward" class="forward btn_1">Forward</button>
-              <button type="submit" name="process" class="submit btn_1">Submit</button>
+              <button type="button" name="backward" class="backward btn_1">Anterior</button>
+              <button type="button" name="forward" class="forward btn_1">Próximo</button>
+              <button type="submit" name="process" class="submit btn_1">Enviar</button>
             </div>
             <!-- /bottom-wizard -->
           </form>
@@ -204,7 +226,7 @@
       </div>
       <!-- /Container -->
 
-      <footer>
+      <!-- <footer>
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-sm-6">
@@ -213,11 +235,11 @@
             <div class="col-sm-6 text-md-end">
               <a class="btn_help btn" href="#modal-help" id="modal_h"><i class="bi bi-question-circle"> Help</i></a>
             </div>
-          </div>
-          <!-- /Row -->
-        </div>
-        <!-- /Container -->
-      </footer>
+          </div> -->
+      <!-- /Row -->
+      <!-- </div> -->
+      <!-- /Container -->
+      <!-- </footer> -->
       <!-- /Footer -->
     </div>
     <!-- /flex-column -->
