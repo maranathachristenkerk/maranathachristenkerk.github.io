@@ -22,7 +22,7 @@ jQuery(function ($) {
 				'</g>' +
 				'</svg>' +
 				'</div>' +
-				'<h4><span>Registro efetuado com sucesso!</span> Obrigado por se registrar.</h4> </br>' +
+				'<h4><span>Envio realizado com sucesso!</span> Redirecionando para página de pagamento...</h4> </br>' +
 				'<small>Você será redirecionado para página de pagamento em 5 segundos.</small>' +
 				'</div> </div>');
 
