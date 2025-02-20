@@ -12,7 +12,8 @@ jQuery(function ($) {
 			data: $(this).serialize(),
 			success: function (response) {
 				// Show success message
-			$('body').append('<div id="success" style="text-align: center; margin-top: 20px; z-index: 100;">' +
+			$('body').append('<div id="success-bg">' +
+				'<div id="success" style="text-align: center; margin-top: 20px; z-index: 100;">' +
 				'<div class="icon icon--order-success svg">' +
 				'<svg xmlns="http://www.w3.org/2000/svg" width="72px" height="72px" style="display: inline;">' +
 				'<g fill="none" stroke="#8EC343" stroke-width="2">' +
@@ -21,15 +22,15 @@ jQuery(function ($) {
 				'</g>' +
 				'</svg>' +
 				'</div>' +
-				'<h4><span>Request successfully sent!</span> Thank you for your time</h4>' +
-				'<small>You will be redirected back in 5 seconds.</small>' +
-				'</div>');
+				'<h4><span>Registro efetuado com sucesso!</span> Obrigado por se registrar.</h4> </br>' +
+				'<small>Você será redirecionado para página de pagamento em 5 segundos.</small>' +
+				'</div> </div>');
 
 			$("#loader_form").fadeOut();
 			
 			setTimeout(function() {
 				// window.location.href = '../index.html'; // Redirect after 5 seconds
-				window.location.reload();
+				window.location.href = 'payment.html'; // Navigate to payment.html page
 				
 			}, 5000);
 			},

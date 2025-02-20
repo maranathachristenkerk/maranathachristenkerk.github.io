@@ -1523,12 +1523,20 @@ input.qtyminus {
 }
 
 /*-------- 3.6 Success submit --------*/
+#success-bg {
+  background-color: #000000c2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+}
+
 #success {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300px;
-  height: 150px;
   margin-top: -120px;
   margin-left: -195px;
   text-align: center;
@@ -1540,6 +1548,7 @@ input.qtyminus {
   padding: 45px;
   border: 1px solid #d9e1e6;
   box-sizing: content-box;
+  transform: translateY(-50%);
 }
 
 #success h4 {
