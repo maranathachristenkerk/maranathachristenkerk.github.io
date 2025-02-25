@@ -1546,7 +1546,7 @@ input.qtyminus {
   padding: 45px;
   border: 1px solid #d9e1e6;
   box-sizing: content-box;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(-50%);
 }
 
 #success h4 {

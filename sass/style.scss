@@ -1318,7 +1318,7 @@ input.qtyminus {
 	padding: 45px;
 	border: 1px solid $border-color-2;
 	box-sizing: content-box;
-	transform: translateY(-50%);
+	transform: translateY(-50%) translateX(-50%);
 }
 #success h4 {
 	font-size: 18px;
