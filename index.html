@@ -45,7 +45,7 @@
     <div class="min-vh-100 d-flex flex-column">
       <header>
         <div class="container-fluid">
-          <div class="row d-flex align-items-center">
+          <div class="flex items-center justify-between">
             <div class="col-4">
               <div id="language-selector" class="flex items-center justify-start gap-2">
                 <button onclick="setLanguage('de')" class="hover:text-red-700 hover:underline transition-all">DE</button>
@@ -57,7 +57,7 @@
                 <button onclick="setLanguage('pt')" class="hover:text-red-700 hover:underline transition-all">PT</button>
               </div>
             </div>
-            <div class="col-4 text-center">
+            <div class="col-4 text-center hidden md:block">
               <h1
                 data-translate="maranatha"
                 data-nl="Maranatha Christen Kerk"
@@ -115,20 +115,18 @@
                 >
                   Ficha de Inscrição para o Seminário Internacional
                 </h3>
-                <p
-                  class="flex items-center justify-center gap-2 pt-6"
-                  data-translate="date"
-                  data-nl="26 april 2025 - 10:00"
-                  data-en="26th April 2025 - 10h00"
-                  data-pt="26 de Abril de 2025 - 10h00"
-                  data-de="26. April 2025 - 10h00"
-                >
-                  <i class="bi bi-calendar-date"></i> 26 de Abril de 2025 - 10h00
-                </p>
+                <div class="flex items-center justify-center gap-2">
+                  <i class="bi bi-calendar-date"></i>
+                  <p class="text-center" data-translate="date"
+                    data-nl="26 april 2025 - 10:00" data-en="26th April 2025 - 10h00"
+                    data-pt="26 de Abril de 2025 - 10h00" data-de="26. April 2025 - 10h00">
+                    26 de Abril de 2025 - 10h00
+                  </p>
+                </div>
 
                 <p class="mt-4 text-center">
                   <i class="bi bi-geo-alt"></i>
-                  Prinses Beatrixlaan 10, 2563 BZ <br />
+                  Thomas Schwenckestraat 30, 2563 BZ <br />
                   Den Haag, Netherlands
                 </p>
               </div>
@@ -162,7 +160,7 @@
                     </div>
                     <div class="mb-3 form-floating">
                       <input type="text" name="country" id="country" class="form-control required" placeholder="País de Residência" />
-                      <label for="country" data-translate="country" data-nl="Land van Woonplaats" data-en="Country of Residence" data-pt="País de Residência" data-de="Wohnort">
+                      <label for="country" data-translate="country" data-nl="Land van Woonplaats" data-en="Country of Residence" data-pt="País de Residência" data-de="Land">
                         País de Residência
                       </label>
                     </div>

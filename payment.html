@@ -10,9 +10,9 @@
 
 	<!-- Favicons-->
 	<link rel="apple-touch-icon" type="image/x-icon" href="img/favicon.png" />
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/favicon.png" />
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/favicon.png" />
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/favicon.png" />
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/favicon.png" />
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/favicon.png" />
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/favicon.png" />
 
 	<!-- GOOGLE WEB FONT -->
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -94,86 +94,87 @@
 					data-pt="Pagamento do Seminário Internacional" data-de="Zahlung für das Internationale Seminar">
 					Pagamento de Inscrição
 				</h3>
-				<p class="flex items-center justify-center gap-2 pt-6" data-translate="date"
-					data-nl="26 april 2025 - 10:00" data-en="26th April 2025 - 10h00"
-					data-pt="26 de Abril de 2025 - 10h00" data-de="26. April 2025 - 10h00">
-					<i class="bi bi-calendar-date"></i> 26 de Abril de 2025 - 10h00
-				</p>
+				<div class="flex items-center justify-center gap-2">
+					<i class="bi bi-calendar-date"></i>
+					<p class="text-center" data-translate="date"
+						data-nl="26 april 2025 - 10:00" data-en="26th April 2025 - 10h00"
+						data-pt="26 de Abril de 2025 - 10h00" data-de="26. April 2025 - 10h00">
+						26 de Abril de 2025 - 10h00
+					</p>
+				</div>
 
 				<p class="mt-4 text-center">
 					<i class="bi bi-geo-alt"></i>
-					Prinses Beatrixlaan 10, 2563 BZ <br />
+					Thomas Schwenckestraat 30, 2563 BZ <br />
 					Den Haag, Netherlands
 				</p>
+
+				<div class="question_title">
+					<p class="text-2xl font-semibold" data-translate="description"
+						data-nl="Ga door met de betaling voor uw inschrijving voor het seminar."
+						data-en="Proceed with the payment for your registration in the seminar."
+						data-pt="Proceda com o pagamento para a sua inscrição no seminário."
+						data-de="Führen Sie den Zahlungsvorgang für Ihre Anmeldung im Seminar durch.">Proceda com o
+						pagamento para a sua inscrição no seminário.</p>
+
+					<br>
+
+					<p class="!text-red-800" data-translate="child_price"
+						data-nl="Tussenpersonen en adolescenten: 5,00 euro"
+						data-en="Intermediates and adolescents: 5,00 euros"
+						data-pt="Intermediários e adolescentes: 5,00 euros"
+						data-de="Jugendliche und Jugendliche: 5,00 Euro">
+						Intermediários e adolescentes: 5,00 euros
+					</p>
+					<p class="!text-red-800" data-translate="adult_price" data-nl="Jongeren en Volwassenen: 10,00 euro"
+						data-en="Youths and Adults: 10,00 euros" data-pt="Jovens e Adultos: 10,00 euros"
+						data-de="Jugendliche und Erwachsene: 10,00 Euro">
+						Jovens e Adultos: 10,00 euros
+					</p>
+
+					<br>
+
+					<p class="!text-red-800" data-translate="instructions"
+						data-nl="Klik op 'Wijzig waarde' om de prijs aan te passen aan het aantal deelnemers dat in het inschrijfformulier is opgegeven."
+						data-en="Click on 'Change value' to adjust the price according to the number of participants informed in the registration form."
+						data-pt="Clique em 'Alterar valor' para alterar o valor da inscrição de acordo com o número de participantes informados no formulário de inscrição."
+						data-de="Klicken Sie auf 'Wert ändern', um den Preis nach der Anzahl der Teilnehmer anzupassen, die Sie im Anmeldeformular eingeben.">
+						Clique em "Alterar valor" para alterar o valor da inscrição de acordo com o número de
+						participantes informados no formulário de inscrição.
+					</p>
+				</div>
+
+				<div class="text-center">
+					<script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+					<stripe-buy-button buy-button-id="buy_btn_1QudTALTVVMsKa9mvX8VjYoI"
+						publishable-key="pk_live_51QuckeLTVVMsKa9mNzUtigFaNyi2o5vhdmAf1icPE0ARaWgjOG1OQfN4mLH3q0C9rFRxKEiqeaInWiUusWGKkRCg00hvNh4MTH">
+					</stripe-buy-button>
+
+				</div>
+				<!-- /Container -->
 			</div>
-
-			<div class="question_title">
-				<p class="text-2xl font-semibold" data-translate="description"
-					data-nl="Ga door met de betaling voor uw inschrijving voor het seminar."
-					data-en="Proceed with the payment for your registration in the seminar."
-					data-pt="Proceda com o pagamento para a sua inscrição no seminário."
-					data-de="Führen Sie den Zahlungsvorgang für Ihre Anmeldung im Seminar durch.">Proceda com o
-					pagamento para a sua inscrição no seminário.</p>
-
-				<br>
-
-				<p class="!text-red-800" data-translate="child_price"
-					data-nl="Kinderen, tussenpersonen en adolescenten: 5,00 euro"
-					data-en="Children, intermediates and adolescents: 5,00 euros"
-					data-pt="Crianças, intermediários e adolescentes: 5,00 euros"
-					data-de="Kinder, Jugendliche und Jugendliche: 5,00 Euro">
-					Crianças, intermediários e adolescentes: 5,00 euros
-				</p>
-				<p class="!text-red-800" data-translate="adult_price"
-					data-nl="Jongeren en Volwassenen: 10,00 euro"
-					data-en="Youths and Adults: 10,00 euros"
-					data-pt="Jovens e Adultos: 10,00 euros"
-					data-de="Jugendliche und Erwachsene: 10,00 Euro">
-					Jovens e Adultos: 10,00 euros
-				</p>
-
-				<br>
-
-				<p class="!text-red-800" data-translate="instructions"
-					data-nl="Klik op 'Wijzig waarde' om de prijs aan te passen aan het aantal deelnemers dat in het inschrijfformulier is opgegeven."
-					data-en="Click on 'Change value' to adjust the price according to the number of participants informed in the registration form."
-					data-pt="Clique em 'Alterar valor' para alterar o valor da inscrição de acordo com o número de participantes informados no formulário de inscrição."
-					data-de="Klicken Sie auf 'Wert ändern', um den Preis nach der Anzahl der Teilnehmer anzupassen, die Sie im Anmeldeformular eingeben.">
-					Clique em "Alterar valor" para alterar o valor da inscrição de acordo com o número de participantes informados no formulário de inscrição.
-				</p>
-			</div>
-
-			<div class="text-center">
-				<script async src="https://js.stripe.com/v3/buy-button.js"></script>
-
-				<stripe-buy-button buy-button-id="buy_btn_1QudTALTVVMsKa9mvX8VjYoI"
-					publishable-key="pk_live_51QuckeLTVVMsKa9mNzUtigFaNyi2o5vhdmAf1icPE0ARaWgjOG1OQfN4mLH3q0C9rFRxKEiqeaInWiUusWGKkRCg00hvNh4MTH">
-				</stripe-buy-button>
-
-			</div>
-			<!-- /Container -->
-		</div>
-		<!-- /flex-column -->
+			<!-- /flex-column -->
 
 
-		<!-- COMMON SCRIPTS -->
-		<script src="js/common_scripts.min.js"></script>
-		<script src="js/common_functions.js"></script>
-		<script src="assets/validate.js"></script>
+			<!-- COMMON SCRIPTS -->
+			<script src="js/common_scripts.min.js"></script>
+			<script src="js/common_functions.js"></script>
+			<script src="assets/validate.js"></script>
 
-		<script>
-			function setLanguage(lang) {
-				const elements = document.querySelectorAll('[data-translate]');
-				elements.forEach((element) => {
-					element.textContent = element.getAttribute(`data-${lang}`);
+			<script>
+				function setLanguage(lang) {
+					const elements = document.querySelectorAll('[data-translate]');
+					elements.forEach((element) => {
+						element.textContent = element.getAttribute(`data-${lang}`);
+					});
+				}
+
+				// Set default language on page load
+				document.addEventListener('DOMContentLoaded', () => {
+					setLanguage('pt'); // Default to Portuguese
 				});
-			}
-
-			// Set default language on page load
-			document.addEventListener('DOMContentLoaded', () => {
-				setLanguage('pt'); // Default to Portuguese
-			});
-		</script>
+			</script>
 </body>
 
 </html>
