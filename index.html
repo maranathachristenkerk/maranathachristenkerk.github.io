@@ -134,24 +134,33 @@
               <div class="step">
                 <div class="question_title">
                   <!-- <h3>Please fill with your address</h3> -->
+ 
+
                   <p
+                    class="text-sm "
+                    data-translate="description"
+                    data-nl="Als u uw registratie eerder heeft voltooid, klik dan op de onderstaande knop om het betalingsformulier te openen."
+                    data-en="If you have completed your registration previously, click on the button below to access the payment form."
+                    data-pt="Caso tenha concluído seu registro anteriormente, clique no botão abaixo para acessar o formulário de pagamento."
+                    data-de="Wenn Sie Ihre Anmeldung abgeschlossen haben, klicken Sie auf den Button unten, um auf das Zahlungsformular zuzugreifen."
+                  ></p>
+
+                  <button type="button" onclick="window.location.href='payment.html'" class="btn_1 bg-blue-700 mt-2 py-2 px-4 shadow-none text-sm" data-translate="payment" data-nl="Betaling" data-en="Proceed to Payment" data-pt="Prosseguir para pagamento" data-de="Weiter zur Zahlung">Prosseguir para pagamento</button>
+
+                  <p
+                    class="text-sm mt-10"
                     data-translate="description"
                     data-nl="Vul alstublieft het onderstaande formulier in om u te registreren."
                     data-en="Please fill out the form below to register."
                     data-pt="Por favor, preencha o formulário abaixo para se registrar."
-                    data-de="Bitte füllen Sie das Formular unten aus, um sich zu registrieren."
-                  ></p>
+                  data-de="Bitte füllen Sie das Formular unten aus, um sich zu registrieren."
+                ></p>
                 </div>
                 <div class="row justify-content-center">
                   <div class="col-md-10">
                     <div class="mb-3 form-floating">
-                      <input type="text" name="name" id="name" class="form-control required" placeholder="Nome Completo" />
-                      <label for="name" data-translate="name" data-nl="Naam" data-en="Name" data-pt="Nome" data-de="Name"> Nome Completo </label>
-                    </div>
-
-                    <div class="mb-3 form-floating">
                       <input type="email" name="email" id="email" class="form-control required" placeholder="Email" />
-                      <label for="email" data-translate="email" data-nl="Email" data-en="Email" data-pt="Email" data-de="Email"> Email </label>
+                      <label for="email" data-translate="email" data-nl="Jouw Email" data-en="Your Email" data-pt="Seu Email" data-de="Ihre Email"> Email </label>
                     </div>
 
                     <div class="mb-3 form-floating">
@@ -175,17 +184,22 @@
                   <!-- <h3>Demais Participantes</h3> -->
                   <p
                     data-translate="description"
-                    data-nl="Vul de gegevens in van de andere deelnemers die u wilt inschrijven. Als er geen andere deelnemers zijn, klik dan op 'Volgende'."
-                    data-en="Inform the data of the other participants you want to register. If there are no more participants, click on 'Next'."
-                    data-pt="Informe os dados dos demais participantes que deseja inscrever. Caso não haja mais participantes, clique em 'Próximo'."
-                    data-de="Informieren Sie die Daten der anderen Teilnehmer, die Sie registrieren möchten. Wenn es keine weiteren Teilnehmer gibt, klicken Sie auf 'Weiter'."
+                    data-nl="Vul de naam en de gegevens in van de andere deelnemers die u wilt inschrijven. Als er geen andere deelnemers zijn, klik dan op 'Volgende'."
+                    data-en="Inform your name and the other participants you want to register. If there are no more participants, click on 'Next'."
+                    data-pt="Informe seu nome e dos demais participantes que deseja inscrever. Caso não haja mais participantes, clique em 'Próximo'."
+                    data-de="Informieren Sie Ihren Namen und die anderen Teilnehmer, die Sie registrieren möchten. Wenn es keine weiteren Teilnehmer gibt, klicken Sie auf 'Weiter'."
                   >
-                    Informe os dados dos demais participantes que deseja inscrever. <br />
+                    Informe seu nome e dos demais participantes que deseja inscrever. <br />
                     Caso não haja mais participantes, clique em "Próximo".
                   </p>
                 </div>
                 <div class="row justify-content-center">
                   <div class="col-md-7">
+                    <div class="mb-3 form-floating">
+                      <input type="text" name="name" id="name" class="form-control required" placeholder="Seu Nome" />
+                      <label for="name" data-translate="name" data-nl="Jouw Naam" data-en="Your Name" data-pt="Seu Nome" data-de="Ihre Name"> Nome Completo </label>
+                    </div>
+
                     <div class="mb-3 form-floating">
                       <input type="text" name="participant01" id="participant01" class="form-control" placeholder="Nome do Participante 01" />
                       <label
